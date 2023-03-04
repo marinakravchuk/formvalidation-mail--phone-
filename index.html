@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Валидация и отправка данных на почту</title>
+    <link rel="stylesheet" href="css/settings.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page__body">
+<div class="container">
+    <h1 class="title title--main">Валидация и отправка данных на почту</h1>
+    <div class="divider"></div>
+    <form action="#" class="form" method="POST">
+        <label class="form__label">
+            <input class="input input-name" type="text" name="Имя" placeholder="Введите имя">
+        </label>
+        <label class="form__label">
+            <input class="input input-mail" type="email" name="Email" placeholder="Введите email">
+        </label>
+        <label class="form__label">
+            <input class="input input-tel" type="tel" name="Телефон" placeholder="Введите телефон">
+        </label>
+        <label class="form__label">
+        <textarea class="textarea" name="Сообщение" id="messages" cols="30" rows="10" placeholder="Введите ваше сообщение"></textarea>
+        </label>
+        <input type="hidden" name="project_name" value="SiteName">
+        <input type="hidden" name="admin_email"  value="test@gmail.com">
+        <input type="hidden" name="form_subject" value="Форма с подвала сайта SiteName">
+        <button class="button">Отправить</button>
+    </form>
+</div>
+<script src="libs/inputmask.min.js"></script>
+<script src="libs/just-validate.production.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
